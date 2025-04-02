@@ -9,7 +9,7 @@ const server = http.createServer(app);
 
 const io = new Server(server, {
     cors: {
-        origin: "http://localhost:3000", // Corrected origin
+        origin: "https://holden-jet.vercel.app/", // Corrected origin
         methods: ["GET", "POST"]
     }
 });
