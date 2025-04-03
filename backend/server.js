@@ -16,7 +16,8 @@ const io = new Server(server, {
     cors: {
         origin: "https://holden-jet.vercel.app/", // Corrected origin
         methods: ["GET", "POST"]
-    }
+    },
+    transports: ['websocket', 'polling'],
 });
 
 // Use Map & Set to store search groups efficiently
