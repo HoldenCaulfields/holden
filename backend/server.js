@@ -8,7 +8,7 @@ const app = express();
 const server = http.createServer(app);
 
 app.use(cors({
-    origin: "https://holden.onrender.com",
+    origin: "https://holden-jet.vercel.app",
     credentials: true
 }));
 
