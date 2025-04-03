@@ -7,6 +7,11 @@ const { Server } = require("socket.io");
 const app = express();
 const server = http.createServer(app);
 
+app.use(cors({
+    origin: "https://holden.onrender.com",
+    credentials: true
+}));
+
 const io = new Server(server, {
     cors: {
         origin: "https://holden-jet.vercel.app/", // Corrected origin
